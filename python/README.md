@@ -18,9 +18,9 @@ The plugin needs some configuration:
 
 All three of these attributes can be configured via Lambda environment variables (in the same way the IOPipe Token is configured).  Set the following variables:
 
-* Write key: `IOPIPE_HONEYCOMB_WRITEKEY`
-* Dataset name: `IOPIPE_HONEYCOMB_DATASET`
-* Sample Rate: `IOPIPE_HONEYCOMB_SAMPLE_RATE`
+* Write key: `HONEYCOMB_WRITEKEY`
+* Dataset name: `HONEYCOMB_DATASET`
+* Sample Rate: `HONEYCOMB_SAMPLE_RATE`
 
 It is strongly advised that (after the dataset has been created) you enable unpacking of nested JSON (configurable at the bottom of the Schema page).
 
