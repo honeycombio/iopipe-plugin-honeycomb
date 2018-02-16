@@ -62,11 +62,24 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+"@iopipe/config@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@iopipe/config/-/config-0.3.0.tgz#80e16e26dd51cb3f857a80feba35af3fd4c72601"
+  dependencies:
+    "@iopipe/trace" "^0.3.0"
+
 "@iopipe/core@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@iopipe/core/-/core-1.5.0.tgz#40d47861fadca698cd42d2af2d7f82e0914eb194"
   dependencies:
     cosmiconfig "^3.1.0"
+
+"@iopipe/trace@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@iopipe/trace/-/trace-0.3.0.tgz#42a558da9c7d310d15f09fddb490fbb7ebbbf399"
+  dependencies:
+    iopipe "^1.0.0"
+    performance-node "^0.2.0"
 
 abab@^1.0.4:
   version "1.0.4"
@@ -1854,6 +1867,13 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
 
+iopipe@^1.0.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/iopipe/-/iopipe-1.5.0.tgz#468b8ea6d2d34d651d78de182188eebb88e86135"
+  dependencies:
+    "@iopipe/config" "^0.3.0"
+    "@iopipe/core" "^1.5.0"
+
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
@@ -2861,6 +2881,10 @@ path-type@^1.0.0:
     graceful-fs "^4.1.2"
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
+
+performance-node@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/performance-node/-/performance-node-0.2.0.tgz#03abf74ac0c455f333be505165dacab9110ef5b3"
 
 performance-now@^0.2.0:
   version "0.2.0"

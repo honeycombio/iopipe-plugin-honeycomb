@@ -11,3 +11,9 @@ export default function formatAndSend(pluginInstance, report) {
     formattedReports.push(formattedReport);
     reports.push(report);
 }
+
+export function reset() {
+    invocations.splice(0, invocations.length);
+    formattedReports.splice(0, formattedReports.length);
+    reports.splice(0, reports.length);
+}
