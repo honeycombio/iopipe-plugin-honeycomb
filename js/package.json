@@ -1,0 +1,45 @@
+{
+  "name": "iopipe-plugin-honeycomb",
+  "version": "0.1.0",
+  "description": "Honeycomb plugin for IOpipe",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "babel": "babel src --out-dir dist --ignore **/*.test.js,**/__mocks__/**",
+    "build": "npm run babel",
+    "eslint": "eslint src",
+    "jest": "jest",
+    "test": "npm run eslint && npm run build && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honeycombio/iopipe-plugin-honeycomb.git"
+  },
+  "author": "Honeycomb & IOpipe <support@honeycomb.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/honeycombio/iopipe-plugin-honeycomb/issues"
+  },
+  "homepage": "https://github.com/honeycombio/iopipe-plugin-honeycomb#readme",
+  "dependencies": {
+    "@iopipe/core": "^1.5.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "libhoney": "^1.0.0-beta.10"
+  },
+  "devDependencies": {
+    "@iopipe/trace": "^0.3.0",
+    "aws-lambda-mock-context": "^3.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.17.0",
+    "eslint-plugin-jest": "^21.7.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2"
+  }
+}
