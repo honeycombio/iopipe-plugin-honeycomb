@@ -12,6 +12,11 @@ logger = logging.getLogger(__name__)
 
 
 class HoneycombReport(Plugin):
+    name = 'honeycomb-report'
+    version = '0.1.0'
+    homepage = 'https://github.com/honeycombio/iopipe-plugin-honeycomb/'
+    enabled = True
+
     def __init__(self, **config):
         self.config = config
         self.config.setdefault('writekey', os.getenv('HONEYCOMB_WRITEKEY', 'unsetwk'))
@@ -27,22 +32,6 @@ class HoneycombReport(Plugin):
             self.config['sample_rate'] = 1
 
         logger.debug('Initializing Honeycomb Plugin with:\n{}'.format(json.dumps(self.config, indent=4)))
-
-    @property
-    def name(self):
-        return 'honeycomb-report'
-
-    @property
-    def version(self):
-        return '0.1.0'
-
-    @property
-    def homepage(self):
-        return 'https://github.com/honeycombio/iopipe-plugin-honeycomb/'
-
-    @property
-    def enabled(self):
-        return True
 
     def pre_setup(self, iopipe):
         pass

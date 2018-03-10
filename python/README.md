@@ -1,14 +1,19 @@
-# Honeycomb plugin for iopipe
+# Honeycomb Plugin for IOpipe
 
 This plugin sends a copy of the iopipe report to Honeycomb. In order to use this plugin, you must have an account with Honeycomb. You can sign up at https://honeycomb.io/signup.
 
-To enable this plugin, include it and enable it in your initialization of iopipe:
+## Usage
+
+To enable this plugin, import it and enable it in your initialization of IOpipe:
 
 ``` python
-from iopipe.contrib.honeycomb import HoneycombReport
+from iopipe import IOpipe
+from iopipe_honeycomb import HoneycombReport
 
 iopipe = IOpipe(token=mytoken, plugins=[HoneycombReport])
 ```
+
+## Configuration
 
 The plugin needs some configuration:
 
@@ -16,7 +21,7 @@ The plugin needs some configuration:
 * Honeycomb dataset name (your choice)
 * Sample Rate (optional, defaults to 1)
 
-All three of these attributes can be configured via Lambda environment variables (in the same way the IOPipe Token is configured).  Set the following variables:
+All three of these attributes can be configured via Lambda environment variables (in the same way the IOpipe Token is configured).  Set the following variables:
 
 * Write key: `HONEYCOMB_WRITEKEY`
 * Dataset name: `HONEYCOMB_DATASET`
