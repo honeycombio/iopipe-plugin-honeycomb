@@ -1,11 +1,13 @@
-# Honeycomb plugin for iopipe
+# Honeycomb Plugin for IOpipe
 
 This plugin sends a copy of the iopipe report to Honeycomb. In order to use this plugin, you must have an account with Honeycomb. You can sign up at https://honeycomb.io/signup.
+
+## Usage
 
 To enable this plugin, include it and enable it in your initialization of iopipe:
 
 ``` js
-const iopipeLib = require('iopipe');
+const iopipeLib = require('@iopipe/iopipe');
 const honeycombReport = require('iopipe-plugin-honeycomb');
 
 const iopipe = iopipeLib({
@@ -14,13 +16,15 @@ const iopipe = iopipeLib({
 });
 ```
 
+## Configuration
+
 The plugin needs some configuration:
 
 * Honeycomb write key (available from https://ui.honeycomb.io/account)
 * Honeycomb dataset name (your choice)
 * Sample Rate (optional, defaults to 1)
 
-All three of these attributes can be configured via Lambda environment variables (in the same way the IOPipe Token is configured).  Set the following variables:
+All three of these attributes can be configured via Lambda environment variables (in the same way the IOpipe Token is configured).  Set the following variables:
 
 * Write key: `HONEYCOMB_WRITEKEY`
 * Dataset name: `HONEYCOMB_DATASET`
@@ -28,7 +32,7 @@ All three of these attributes can be configured via Lambda environment variables
 
 They can also be provided directly in code:
 
-```
+```js
 const iopipe = iopipeLib({
   token: 'TOKEN_HERE',
   plugins: [honeycombReport({

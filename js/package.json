@@ -24,12 +24,11 @@
   },
   "homepage": "https://github.com/honeycombio/iopipe-plugin-honeycomb#readme",
   "dependencies": {
-    "@iopipe/core": "^1.5.0",
+    "@iopipe/iopipe": "^1.6.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "libhoney": "^1.0.0-beta.10"
   },
   "devDependencies": {
-    "@iopipe/trace": "^0.3.0",
     "aws-lambda-mock-context": "^3.1.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
