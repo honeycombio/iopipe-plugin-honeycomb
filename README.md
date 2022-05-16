@@ -1,8 +1,12 @@
 # iopipe-plugin-honeycomb
 
-[![OSS Lifecycle](https://img.shields.io/osslifecycle/honeycombio/iopipe-plugin-honeycomb?color=pink)](https://github.com/honeycombio/home/blob/main/honeycomb-oss-lifecycle-and-practices.md)
+[![OSS Lifecycle](https://img.shields.io/osslifecycle/honeycombio/iopipe-plugin-honeycomb)](https://github.com/honeycombio/home/blob/main/honeycomb-oss-lifecycle-and-practices.md)
 
-**STATUS: this project is being sunset.** [See https://github.com/honeycombio/iopipe-plugin-honeycomb/issues/28](https://github.com/honeycombio/iopipe-plugin-honeycomb/issues/28)
+**STATUS: this project is [archived](https://github.com/honeycombio/home/blob/main/honeycomb-oss-lifecycle-and-practices.md).**
+
+Questions? You can chat with us in the **Honeycomb Pollinators** Slack. You can find a direct link to request an invite in [Spread the Love: Appreciating Our Pollinators Community](https://www.honeycomb.io/blog/spread-the-love-appreciating-our-pollinators-community/).
+
+---
 
 A plugin to iopipe to send reports to Honeycomb
 
